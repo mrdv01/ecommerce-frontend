@@ -24,7 +24,7 @@ Welcome to **Emart**, your one-stop solution for online shopping! This repositor
 - 🎨 **Frontend**: React, HTML, CSS, JavaScript
 - 🖥️ **Backend**: Node.js, Express.js
 - 🗃️ **Database**: MongoDB
-- 🔒 **Authentication**: Passport.js, JWT
+- 🔒 **Authentication**: JWT
 - ☁️ **Cloud Services**: Cloudinary for image uploads
 - 📊 **Admin Tools**: Custom dashboard for product, order, and customer management
 
