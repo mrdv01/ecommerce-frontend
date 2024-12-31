@@ -11,8 +11,8 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const [formData, setFormData] = useState({
-    email: "dv@gmail.com",
-    password: "12345",
+    email: "",
+    password: "",
   });
   //---Destructuring---
   const { email, password } = formData;
