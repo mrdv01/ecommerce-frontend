@@ -10,6 +10,7 @@ import { createProductAction } from "../../../redux/slices/products/productsSlic
 import { fetchCategoriesAction } from "../../../redux/slices/categories/categoriesSlice";
 import { fetchBrandsAction } from "../../../redux/slices/categories/brandsSlice";
 import { fetchColorsAction } from "../../../redux/slices/categories/colorsSlices";
+import { resetSuccessAction } from "../../../redux/slices/globalActions/globalAction";
 
 //animated components for react-select
 const animatedComponents = makeAnimated();
@@ -143,6 +144,12 @@ export default function AddProduct() {
       totalQty: "",
     });
   };
+
+  useEffect(() => {
+    if (isAdded) {
+      dispatch(resetSuccessAction());
+    }
+  }, [isAdded, dispatch])
 
   return (
     <>
