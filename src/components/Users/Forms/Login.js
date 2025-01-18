@@ -11,8 +11,8 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const [formData, setFormData] = useState({
-    email: "dv@gmail.com",
-    password: "12345",
+    email: "",
+    password: "",
   });
   //---Destructuring---
   const { email, password } = formData;
@@ -33,13 +33,6 @@ const Login = () => {
   //get data from store
   const { error, loading, userInfo } = useSelector((state) => state?.users?.userAuth);
 
-  //redirect
-  // if (userInfo?.userFound?.isAdmin) {
-  //   window.location.href = '/admin';
-  // }
-  // else {
-  //   window.location.href = '/customer-profile'
-  // }
 
   useEffect(() => {
     if (userInfo?.userFound) {
