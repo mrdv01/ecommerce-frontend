@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchProductsAction } from "../../redux/slices/products/productsSlice";
 import baseURL from "../../utils/baseURL";
+import { resetSuccessAction } from "../../redux/slices/globalActions/globalAction";
 
 const HomeProductTrending = () => {
   const dispatch = useDispatch();
@@ -16,10 +17,17 @@ const HomeProductTrending = () => {
     products: { products },
     error,
     loading,
+    isAdded,
   } = useSelector((state) => state?.products);
   console.log(products);
 
-  const trendingProducts = [];
+  useEffect(() => {
+    if (isAdded) {
+      dispatch(resetSuccessAction());
+    }
+  }, [dispatch, isAdded])
+
+
   return (
     <>
       <section aria-labelledby="trending-heading">
