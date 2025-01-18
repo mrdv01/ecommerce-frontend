@@ -2,7 +2,7 @@
 
 Welcome to **Emart**, your one-stop solution for online shopping! This repository contains the codebase for Emart, a modern, user-friendly e-commerce platform designed to offer a seamless shopping experience.
 
-live preview [https://ecommerce-frontend-dg59095ey-mrdevs-projects-a7590997.vercel.app/]
+live preview [https://ecommerce-frontend-three-alpha.vercel.app/]
 
 ---
 
